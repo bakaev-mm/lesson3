@@ -13,3 +13,8 @@ last_week = dt - delta * 7
 print('Неделя назад {}'.format(last_week))
 last_month = dt.replace(month=dt.month - 1)
 print('Месяц назад {}'.format(last_month))
+
+
+dt_string = '01/01/2017 12:10:03.234567'
+dt_date = datetime.strptime(dt_string,'%m/%d/%Y %H:%M:%S.%f')
+print(dt_date)
